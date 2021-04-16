@@ -13,15 +13,14 @@ const randomIndexGenerator = (array) => {
     return array[randomIndex];
 };
 
-function randomBookNameGenerator(){
+function randomBookNameGenerator(name){
     const adjective = randomIndexGenerator(adjectiveArray);
     const action = randomIndexGenerator(actionArray);
     const character = randomIndexGenerator(characterArray);
-    // let name = document.getElementById('a').value;
-
-    // if (name){
-    //     return window.alert(`${name}: ${adjective} ${action} ${character}.`)
-    // }
+    
+    if (name){
+        return window.alert(`${name}: ${adjective} ${action} ${character}.`)
+    }
     return window.alert(`${adjective} ${action} ${character}.`)
 }
 
